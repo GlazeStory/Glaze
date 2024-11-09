@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Chemical Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Bright Chemical Logo">
+            <h2>Bright Chemical</h2>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href=#product.html>Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Bright Chemical</h1>
+            <p>Distributor Bahan Kimia Terpercaya dengan Kualitas Premium</p>
+            <a href="#produk" class="btn">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section id="produk" class="product-section">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="asam-sulfat.jpg" alt="Asam Sulfat">
+                <div class="product-card-content">
+                    <h3>Asam Sulfat</h3>
+                    <p>Rp 50.000 / Liter</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="natrium-klorida.jpg" alt="Natrium Klorida">
+                <div class="product-card-content">
+                    <h3>Natrium Klorida</h3>
+                    <p>Rp 20.000 / Kg</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="etanol.jpg" alt="Etanol">
+                <div class="product-card-content">
+                    <h3>Etanol</h3>
+                    <p>Rp 75.000 / Liter</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="metanol.jpg" alt="Metanol">
+                <div class="product-card-content">
+                    <h3>Metanol</h3>
+                    <p>Rp 60.000 / Liter</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="about">
+        <h2>Tentang Bright Chemical</h2>
+        <p>Kami adalah distributor bahan kimia terkemuka yang menyediakan produk berkualitas tinggi untuk berbagai kebutuhan industri dan penelitian.</p>
+    </section>
+
+    <section id="kontak" class="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Bright Chemical. Hak Cipta Dilindungi.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-to-top" title="Kembali ke atas">↑</a>
+    <script>
+        // Menampilkan tombol "Scroll to Top" ketika scroll halaman lebih dari 100px
+        window.onscroll = function() {
+            var scrollBtn = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollBtn.classList.add('show');
+            } else {
+                scrollBtn.classList.remove('show');
+            }
+        };
+    
+        // Scroll ke atas saat tombol diklik
+        document.querySelector('.scroll-to-top').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    
+</body>
+</html>

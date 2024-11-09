@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Chemical Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Bright Chemical Logo">
+            <h2>Bright Chemical</h2>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Produk Section -->
+    <section id="produk" class="product-section">
+        <h2>Produk Kami</h2>
+        
+        <!-- Filter Produk -->
+        <div class="filter-section">
+            <select id="category-filter">
+                <option value="">Pilih Kategori</option>
+                <option value="kimia">Bahan Kimia</option>
+                <option value="laboratorium">Laboratorium</option>
+                <option value="industri">Industri</option>
+            </select>
+            <input type="number" id="price-filter" placeholder="Max Harga (Rp)" />
+            <button id="apply-filter">Terapkan Filter</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Asam Sulfat">
+                <div class="product-info">
+                    <h3>Asam Sulfat</h3>
+                    <p>Rp 50.000 / Liter</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Natrium Klorida">
+                <div class="product-info">
+                    <h3>Natrium Klorida</h3>
+                    <p>Rp 20.000 / Kg</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Etanol">
+                <div class="product-info">
+                    <h3>Etanol</h3>
+                    <p>Rp 75.000 / Liter</p>
+                    <a href="#" class="btn">Beli Sekarang</a>
+                </div>
+            </div>
+            <!-- More Product Cards Here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Bright Chemical. Hak Cipta Dilindungi.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('apply-filter').addEventListener('click', function() {
+            var category = document.getElementById('category-filter').value;
+            var maxPrice = document.getElementById('price-filter').value;
+    
+            // Implement logic to filter products based on selected category and max price
+            console.log('Filter applied:', category, maxPrice);
+            // You can implement dynamic filtering here or reload the page with query parameters
+        });
+    </script>
+    
+</body>
+</html>
